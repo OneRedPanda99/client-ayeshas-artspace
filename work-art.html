@@ -101,28 +101,6 @@
       border: 1px solid var(--orange);
       border-opacity: 0.3;
     }
-
-    /* Placeholder input for new images */
-    .placeholder-input-box {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      padding: 1rem;
-      background: rgba(92, 62, 148, 0.1);
-      border: 1px dashed var(--border);
-      border-radius: 8px;
-      font-size: 0.85rem;
-      color: var(--text-dim);
-    }
-
-    .placeholder-input-box code {
-      background: rgba(0, 0, 0, 0.3);
-      padding: 0.5rem 0.75rem;
-      border-radius: 4px;
-      font-family: 'Courier New', monospace;
-      color: var(--orange);
-      overflow-x: auto;
-    }
   </style>
 </head>
 <body>
@@ -157,7 +135,7 @@
         <h2 class="description-title" id="modalTitle">Project Title</h2>
         <button class="description-close" id="closeModal" aria-label="Close description">&times;</button>
       </div>
-      <p class="description-text" id="modalDescription">[description please input]</p>
+      <p class="description-text" id="modalDescription">Add description for this artwork.</p>
       <div class="description-meta">
         <div class="meta-item">
           <span>Year:</span>
@@ -179,7 +157,7 @@
         <div class="work-card-title">Project Title</div>
         <div class="work-card-meta">2025</div>
       </div>
-      <div class="card-data" style="display: none;" data-description="[description please input]" data-size="—"></div>
+      <div class="card-data" style="display: none;" data-description="" data-size="—"></div>
     </div>
 
     <div class="work-card has-description">
@@ -188,7 +166,7 @@
         <div class="work-card-title">Project Title</div>
         <div class="work-card-meta">2025</div>
       </div>
-      <div class="card-data" style="display: none;" data-description="[description please input]" data-size="—"></div>
+      <div class="card-data" style="display: none;" data-description="" data-size="—"></div>
     </div>
 
     <div class="work-card has-description">
@@ -197,18 +175,12 @@
         <div class="work-card-title">Project Title</div>
         <div class="work-card-meta">2025</div>
       </div>
-      <div class="card-data" style="display: none;" data-description="[description please input]" data-size="—"></div>
+      <div class="card-data" style="display: none;" data-description="" data-size="—"></div>
     </div>
 
     <!-- Placeholder cards for new images -->
     <div class="work-card">
-      <div class="work-card-img">
-        <div class="placeholder-input-box">
-          <strong>Add new image</strong>
-          <code>src="pasteLinkHere.jpg"</code>
-          <span>Replace placeholder-dot with img tag</span>
-        </div>
-      </div>
+      <div class="work-card-img"><div class="placeholder-dot"></div></div>
       <div class="work-card-info">
         <div class="work-card-title">Project Title</div>
         <div class="work-card-meta">2024</div>
@@ -216,13 +188,7 @@
     </div>
 
     <div class="work-card">
-      <div class="work-card-img">
-        <div class="placeholder-input-box">
-          <strong>Add new image</strong>
-          <code>src="pasteLinkHere.jpg"</code>
-          <span>Replace placeholder-dot with img tag</span>
-        </div>
-      </div>
+      <div class="work-card-img"><div class="placeholder-dot"></div></div>
       <div class="work-card-info">
         <div class="work-card-title">Project Title</div>
         <div class="work-card-meta">2024</div>
@@ -230,13 +196,7 @@
     </div>
 
     <div class="work-card">
-      <div class="work-card-img">
-        <div class="placeholder-input-box">
-          <strong>Add new image</strong>
-          <code>src="pasteLinkHere.jpg"</code>
-          <span>Replace placeholder-dot with img tag</span>
-        </div>
-      </div>
+      <div class="work-card-img"><div class="placeholder-dot"></div></div>
       <div class="work-card-info">
         <div class="work-card-title">Project Title</div>
         <div class="work-card-meta">2024</div>
@@ -264,15 +224,15 @@
       osc.connect(gain);
       gain.connect(audioContext.destination);
 
-      // Subtle click parameters
-      osc.frequency.setValueAtTime(2400, now);
-      osc.frequency.exponentialRampToValueAtTime(800, now + 0.08);
+      // Soft, satisfying click parameters
+      osc.frequency.setValueAtTime(1800, now);
+      osc.frequency.exponentialRampToValueAtTime(600, now + 0.12);
 
-      gain.gain.setValueAtTime(0.15, now);
-      gain.gain.exponentialRampToValueAtTime(0.01, now + 0.08);
+      gain.gain.setValueAtTime(0.06, now);
+      gain.gain.exponentialRampToValueAtTime(0.002, now + 0.12);
 
       osc.start(now);
-      osc.stop(now + 0.08);
+      osc.stop(now + 0.12);
     }
 
     // ═══════════════════════════════════════════════

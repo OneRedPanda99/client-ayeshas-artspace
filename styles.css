@@ -209,7 +209,7 @@ footer {
 
 .hero-name {
   font-family: 'Cormorant', serif;
-  font-size: clamp(5rem, 17vw, 15rem);
+  font-size: clamp(4rem, 16vw, 14rem);
   font-weight: 300;
   line-height: 0.86;
   letter-spacing: -0.03em;

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Art — Ayesha's Artspace</title>
+  <title>Graphic Design — Ayesha's Artspace</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +15,6 @@
   <nav id="nav">
     <a href="index.html" class="nav-logo">Ayesha's Artspace</a>
     <div class="nav-links" id="navLinks">
-      <a href="work-art.html" class="nav-active">Art</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </div>
@@ -25,135 +24,74 @@
     </button>
   </nav>
 
-  <!-- Sound toggle button -->
-  <button class="sound-btn" id="soundBtn" aria-label="Toggle ambient sounds" title="Toggle ambient bird sounds">
-    <svg class="sound-icon sound-on" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M15.54 8.46C16.47 9.39 17 10.67 17 12C17 13.33 16.47 14.61 15.54 15.54" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-      <path d="M19.07 4.93C20.96 6.82 22 9.35 22 12C22 14.65 20.96 17.18 19.07 19.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-    </svg>
-    <svg class="sound-icon sound-off" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
-      <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M23 9L17 15M17 9L23 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-    </svg>
-    <span class="sound-label">birds</span>
-  </button>
-
   <div class="page-header">
     <div class="breadcrumb">
-      <a href="index.html">Home</a>
+      <a href="index.html">Work</a>
       <span>/</span>
-      <span>Art</span>
+      <span>Graphic Design</span>
     </div>
-    <span class="page-label">Ayesha's Gallery</span>
-    <h1 class="page-title">Art that comes<br><em>from the heart.</em></h1>
-    <p class="page-desc">Paintings, sketches, calligraphy, and handmade crafts. Click any piece to see more.</p>
+    <span class="page-label">Discipline 01</span>
+    <h1 class="page-title">Graphic<br>Design</h1>
   </div>
 
-  <!-- Art Gallery -->
-  <div class="work-grid" id="artGrid">
+  <div class="work-grid">
 
-    <div class="work-card" data-title="Silhouette in Emerald" data-year="2024" data-desc="A tree stands against the unknown — its dark branches reaching outward like searching hands. Painted with acrylic, this piece came from a quiet afternoon where I just let the brush move. One of those pieces I keep coming back to." data-img="images/logokeartgreenblacktree.jpg">
-      <div class="work-card-img">
-        <img src="images/logokeartgreenblacktree.jpg" alt="Silhouette in Emerald — dark tree branches against a green background">
-        <div class="card-hover-overlay">
-          <span>View</span>
-        </div>
-      </div>
-      <div class="work-card-info">
-        <div class="work-card-title">Silhouette in Emerald</div>
-        <div class="work-card-meta">2024 · Acrylic</div>
-      </div>
-    </div>
-
-    <div class="work-card" data-title="Night Sky" data-year="2024" data-desc="Deep indigo and midnight blue meeting in a quiet sky. I painted this very late at night and you can feel it — there's a certain stillness in it that only comes when the world is asleep. The stars felt important to get right." data-img="images/logokeartbluenightsky.jpg">
-      <div class="work-card-img">
-        <img src="images/logokeartbluenightsky.jpg" alt="Night Sky — deep blue night scene">
-        <div class="card-hover-overlay">
-          <span>View</span>
-        </div>
-      </div>
-      <div class="work-card-info">
-        <div class="work-card-title">Night Sky</div>
-        <div class="work-card-meta">2024 · Acrylic</div>
-      </div>
-    </div>
-
-    <div class="work-card" data-title="Crimson Roots" data-year="2024" data-desc="Bold and stark. Red bleeds into black as the tree anchors itself into nothing. This one surprised me — I started with no plan and ended up with something I genuinely love. Sometimes I catch myself looking at it and just smiling." data-img="images/logokeartredandblacktree.jpg">
-      <div class="work-card-img">
-        <img src="images/logokeartredandblacktree.jpg" alt="Crimson Roots — red and black tree painting">
-        <div class="card-hover-overlay">
-          <span>View</span>
-        </div>
-      </div>
-      <div class="work-card-info">
-        <div class="work-card-title">Crimson Roots</div>
-        <div class="work-card-meta">2024 · Acrylic</div>
-      </div>
-    </div>
-
-    <!-- Placeholder cards for future work -->
-    <div class="work-card work-card-placeholder">
+    <div class="work-card">
       <div class="work-card-img"><div class="placeholder-dot"></div></div>
       <div class="work-card-info">
-        <div class="work-card-title" style="color: var(--text-muted)">More coming soon</div>
-        <div class="work-card-meta">—</div>
+        <div class="work-card-title">Project Title</div>
+        <div class="work-card-meta">2025</div>
       </div>
     </div>
 
-    <div class="work-card work-card-placeholder">
+    <div class="work-card">
       <div class="work-card-img"><div class="placeholder-dot"></div></div>
       <div class="work-card-info">
-        <div class="work-card-title" style="color: var(--text-muted)">More coming soon</div>
-        <div class="work-card-meta">—</div>
+        <div class="work-card-title">Project Title</div>
+        <div class="work-card-meta">2025</div>
       </div>
     </div>
 
-    <div class="work-card work-card-placeholder">
+    <div class="work-card">
       <div class="work-card-img"><div class="placeholder-dot"></div></div>
       <div class="work-card-info">
-        <div class="work-card-title" style="color: var(--text-muted)">More coming soon</div>
-        <div class="work-card-meta">—</div>
+        <div class="work-card-title">Project Title</div>
+        <div class="work-card-meta">2024</div>
       </div>
     </div>
 
-  </div>
-
-  <!-- Logos & Design Section (placeholder for future) -->
-  <div id="logos" class="coming-soon-section">
-    <div class="coming-soon-inner">
-      <span class="coming-soon-tag">Next Up</span>
-      <h2 class="coming-soon-title">Logos &amp; Graphic Design</h2>
-      <p class="coming-soon-text">This section is being prepared. Check back soon — there's more on the way.</p>
-      <div class="coming-soon-dots">
-        <span></span><span></span><span></span>
+    <div class="work-card">
+      <div class="work-card-img"><div class="placeholder-dot"></div></div>
+      <div class="work-card-info">
+        <div class="work-card-title">Project Title</div>
+        <div class="work-card-meta">2024</div>
       </div>
     </div>
-  </div>
 
-  <!-- Lightbox -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Artwork viewer">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
-    <div class="lightbox-inner">
-      <div class="lightbox-img-wrap">
-        <img class="lightbox-img" id="lightboxImg" src="" alt="">
-      </div>
-      <div class="lightbox-info">
-        <span class="lightbox-tag">Artwork</span>
-        <h2 class="lightbox-title" id="lightboxTitle"></h2>
-        <p class="lightbox-year" id="lightboxYear"></p>
-        <p class="lightbox-desc" id="lightboxDesc"></p>
+    <div class="work-card">
+      <div class="work-card-img"><div class="placeholder-dot"></div></div>
+      <div class="work-card-info">
+        <div class="work-card-title">Project Title</div>
+        <div class="work-card-meta">2024</div>
       </div>
     </div>
+
+    <div class="work-card">
+      <div class="work-card-img"><div class="placeholder-dot"></div></div>
+      <div class="work-card-info">
+        <div class="work-card-title">Project Title</div>
+        <div class="work-card-meta">2024</div>
+      </div>
+    </div>
+
   </div>
 
   <footer>
     <a href="index.html" class="footer-logo">Ayesha's Artspace</a>
-    <span class="footer-copy">© 2026</span>
+    <span class="footer-copy">© 2025</span>
   </footer>
 
   <script>
-    // ── Nav ──────────────────────────────────────────
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 40);
@@ -167,8 +105,8 @@
       toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     });
 
-    // ── Card scroll animation ────────────────────────
-    const cards = document.querySelectorAll('.work-card:not(.work-card-placeholder)');
+    // Staggered card reveal on scroll
+    const cards = document.querySelectorAll('.work-card');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -178,146 +116,9 @@
       });
     }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
 
-    document.querySelectorAll('.work-card').forEach((card, i) => {
+    cards.forEach((card, i) => {
       card.style.transitionDelay = `${i * 65}ms`;
       observer.observe(card);
-    });
-
-    // ── Lightbox ─────────────────────────────────────
-    const lightbox      = document.getElementById('lightbox');
-    const lightboxImg   = document.getElementById('lightboxImg');
-    const lightboxTitle = document.getElementById('lightboxTitle');
-    const lightboxYear  = document.getElementById('lightboxYear');
-    const lightboxDesc  = document.getElementById('lightboxDesc');
-    const lightboxClose = document.getElementById('lightboxClose');
-
-    function openLightbox(card) {
-      const img   = card.dataset.img;
-      const title = card.dataset.title;
-      const year  = card.dataset.year;
-      const desc  = card.dataset.desc;
-      if (!img) return;
-
-      lightboxImg.src   = img;
-      lightboxImg.alt   = title;
-      lightboxTitle.textContent = title;
-      lightboxYear.textContent  = year + ' · Acrylic on canvas';
-      lightboxDesc.textContent  = desc;
-
-      lightbox.classList.add('open');
-      document.body.style.overflow = 'hidden';
-      playClickSound();
-    }
-
-    function closeLightbox() {
-      lightbox.classList.remove('open');
-      document.body.style.overflow = '';
-    }
-
-    cards.forEach(card => {
-      card.addEventListener('click', () => openLightbox(card));
-      card.setAttribute('role', 'button');
-      card.setAttribute('tabindex', '0');
-      card.addEventListener('keydown', e => {
-        if (e.key === 'Enter' || e.key === ' ') openLightbox(card);
-      });
-    });
-
-    lightboxClose.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', e => {
-      if (e.target === lightbox) closeLightbox();
-    });
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') closeLightbox();
-    });
-
-    // ── Sound: ambient birds + UI click ─────────────
-    let audioCtx = null;
-    let soundActive = false;
-    let birdInterval = null;
-
-    const soundBtn   = document.getElementById('soundBtn');
-    const iconOn     = soundBtn.querySelector('.sound-on');
-    const iconOff    = soundBtn.querySelector('.sound-off');
-    const soundLabel = soundBtn.querySelector('.sound-label');
-
-    function getCtx() {
-      if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-      return audioCtx;
-    }
-
-    function chirp(ctx, startTime, freq, durationSec, vol) {
-      const osc  = ctx.createOscillator();
-      const gain = ctx.createGain();
-      osc.connect(gain);
-      gain.connect(ctx.destination);
-
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(freq, startTime);
-      osc.frequency.exponentialRampToValueAtTime(freq * 1.6, startTime + durationSec * 0.35);
-      osc.frequency.exponentialRampToValueAtTime(freq * 0.85, startTime + durationSec);
-
-      gain.gain.setValueAtTime(0, startTime);
-      gain.gain.linearRampToValueAtTime(vol, startTime + 0.015);
-      gain.gain.exponentialRampToValueAtTime(0.0001, startTime + durationSec);
-
-      osc.start(startTime);
-      osc.stop(startTime + durationSec + 0.05);
-    }
-
-    function chirpPair(ctx, baseFreq, vol) {
-      const now = ctx.currentTime;
-      chirp(ctx, now,       baseFreq,        0.12, vol);
-      chirp(ctx, now + 0.16, baseFreq * 1.1, 0.10, vol * 0.8);
-    }
-
-    function scheduleBirds() {
-      if (!soundActive) return;
-      const ctx  = getCtx();
-      const vol  = 0.055;
-      // Randomise frequency (different "birds") and gap
-      const freqs  = [2400, 2800, 3100, 3500, 2200, 2600];
-      const freq   = freqs[Math.floor(Math.random() * freqs.length)];
-      const single = Math.random() < 0.4; // sometimes single chirp
-      if (single) {
-        chirp(ctx, ctx.currentTime, freq, 0.14, vol);
-      } else {
-        chirpPair(ctx, freq, vol);
-      }
-      const gap = 800 + Math.random() * 2200; // 0.8s – 3s between calls
-      birdInterval = setTimeout(scheduleBirds, gap);
-    }
-
-    function playClickSound() {
-      try {
-        const ctx  = getCtx();
-        const now  = ctx.currentTime;
-        const osc  = ctx.createOscillator();
-        const gain = ctx.createGain();
-        osc.connect(gain);
-        gain.connect(ctx.destination);
-        osc.type = 'sine';
-        osc.frequency.setValueAtTime(880, now);
-        osc.frequency.exponentialRampToValueAtTime(660, now + 0.08);
-        gain.gain.setValueAtTime(0.04, now);
-        gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.12);
-        osc.start(now);
-        osc.stop(now + 0.15);
-      } catch (e) {}
-    }
-
-    soundBtn.addEventListener('click', () => {
-      soundActive = !soundActive;
-      iconOn.style.display  = soundActive ? 'none'  : '';
-      iconOff.style.display = soundActive ? ''      : 'none';
-      soundLabel.textContent = soundActive ? 'mute' : 'birds';
-      soundBtn.classList.toggle('active', soundActive);
-
-      if (soundActive) {
-        getCtx().resume().then(scheduleBirds);
-      } else {
-        clearTimeout(birdInterval);
-      }
     });
   </script>
 </body>
